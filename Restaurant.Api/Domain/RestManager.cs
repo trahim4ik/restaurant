@@ -74,7 +74,8 @@ namespace Restaurant.Api.Domain
                     x.Value.Count == 0,
                     x.Value.Sum(x => x.Size) == x.Key.Size,
                     x.Value
-                    )));
+                    ))
+                );
 
         public void InitTables(IEnumerable<int> tableSizes)
         {
