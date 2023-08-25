@@ -4,7 +4,7 @@ namespace Restaurant.Api.Domain
 {
     public class RestManager
     {
-        static readonly SemaphoreSlim Semaphore = new(1);
+        static readonly SemaphoreSlim Semaphore = new(1, 1);
 
         private readonly Dictionary<Table, List<ClientsGroup>> _tables = new();
 
